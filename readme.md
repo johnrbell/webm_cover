@@ -43,7 +43,9 @@ this only uses pure CSS to accomplish the task, nothing special required.
 ## Reasons for this:
 - Below is a screenshot of a gif that was uploaded to http://gfycat.com
 
-  -Video file was 1080p, pulled from youtube.
+  - Video file was 1080p, pulled from youtube.
+
+  - Link to gfycat - http://gfycat.com/DefenselessInstructiveCrocodileskink 
 
  <a href=images/shot.png target=_blank>
 <img src=images/shot.png width=400>
