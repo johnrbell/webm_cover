@@ -45,7 +45,7 @@ this only uses pure CSS to accomplish the task, nothing special required.
 
   - Video file was 1080p, pulled from youtube.
 
-  - Link to gfycat - http://gfycat.com/DefenselessInstructiveCrocodileskink 
+  - Link to gfycat - <a href=http://gfycat.com/DefenselessInstructiveCrocodileskink target=_blank>http://gfycat.com/DefenselessInstructiveCrocodileskink</a>
 
  <a href=images/shot.png target=_blank>
 <img src=images/shot.png width=400>
