@@ -1,38 +1,57 @@
 # Using Webm as cover images
 
-**the ultimate goal here is to **
+**the ultimate goal here is to be able to use webm videos in place of static images when picking a cover image for a website **
 
 ## Requirements, APIs, and Gems
-1. require 'pry' - for testing during development
-- require 'sinatra' - because it works
-- require 'mustache' - templating
-- require 'sinatra/reloader' - keeps sinatra upto date with saves
-- require 'date' - for date/time manipulation
-- require 'sendgrid-ruby' - sending emails via sendgrid api
-- require 'twilio-ruby' - sending sms via twilio api
+this only uses pure CSS to accomplish the task, nothing special required.
 
-## To run
-1. download and retain file structure
-- simply run server.rb using:
-`ruby server.rb`
-- basic database managment using:
-`localhost/manage`
+## To use
+1. require webmcover.css in html file
+```
+<link rel="stylesheet" type="text/css" href="webmcover.css">
+```
+- contents of webmcover.css
+```
+#bgmotion {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bgmotion video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+```
 
-## Trello
-**Public Trello**:
-https://trello.com/b/UBr2Byzt/ooh-fancy
+- place div in html file
+```
+<div id="bgmotion">
+<video id="sampleMovie" autoplay loop
+         src="http://i.imgur.com/j5V01xY.webm">
+</video>
+</div>
+```
 
-**Diagrams from brainstorming sessions:**
+## Reasons for this:
+- Below is a screenshot of a gif that was uploaded to http://gfycat.com
 
-* Wireframe:
-(note, this was original)
+  -Video file was 1080p, pulled from youtube.
 
-<img src=https://trello-attachments.s3.amazonaws.com/5492f97732633e7ec51b70ec/600x450/bc249e3a13e0c902a82b7e2bfb4853d8/2014-12-18_10.52.51.jpg width=400>
+ <a href=images/shot.png target=_blank>
+<img src=images/shot.png width=400>
+</a>
 
-* ERD
-(note, this was original)
 
-<img src=https://trello-attachments.s3.amazonaws.com/5492f2555a38ae8e6d86a6a8/600x450/8378376cf28ae2782fde2b6787c85e38/2014-12-18_14.50.41.jpg width=400>
-
-## Live Version
-work in progress
+- By enlarging the image, you can see the specs regarding the conversion to WebM:
+  - Original Gif file was 13mb in size
+  - WebM video file is 363k
+- Considerable load time instantly becomes zero.
+- You can now utilize large, high resolution animations as cover images- with zero negative effects.
