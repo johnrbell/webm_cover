@@ -34,7 +34,7 @@ this only uses pure CSS to accomplish the task, nothing special required.
 - place div in html file
 ```
 <div id="bgmotion">
-<video id="sampleMovie" autoplay loop
+<video autoplay loop
          src="http://i.imgur.com/j5V01xY.webm">
 </video>
 </div>
@@ -53,5 +53,6 @@ this only uses pure CSS to accomplish the task, nothing special required.
 - By enlarging the image, you can see the specs regarding the conversion to WebM:
   - Original Gif file was 13mb in size
   - WebM video file is 363k
+  - 19.2:1 compression ratio
 - Considerable load time instantly becomes zero.
 - You can now utilize large, high resolution animations as cover images- with zero negative effects.
