@@ -34,8 +34,7 @@ this only uses pure CSS to accomplish the task, nothing special required.
 - place div in html file
 ```
 <div id="bgmotion">
-<video autoplay loop
-         src="http://i.imgur.com/j5V01xY.webm">
+<video autoplay loop src="http://i.imgur.com/j5V01xY.webm">
 </video>
 </div>
 ```
